@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>National Zoological Garden - Enquiry</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="enquiry.html">Enquiry</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <h1>National Zoological Garden of South Africa</h1>
+            <h2>Enquiry</h2>
+            <hr>
+        </header>
+        <main>
+            <section>
+                <h2>Make an Enquiry</h2>
+                <img src="images/zoo.jpg"
+                     alt="National Zoological Garden"
+                     width="500">
+                <p>
+                    Please complete the form below if you would like more
+                    information about visiting the National Zoological Garden,
+                    educational programmes, events or conservation activities.
+                </p>
+            </section>
+            <hr>
+            <section>
+                <form>
+                    <fieldset>
+                        <legend>Personal information</legend>
+                        <label for="fullname">
+                            Full Name:
+                        </label>
+                        <br>
+                        <input
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            required>
+                        <br><br>
+                        <label for="email">
+                            Email Address:
+                        </label>
+                        <br>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required>
+                        <br><br>
+                        <label for="phone">
+                            Phone Number:
+                        </label>
+                        <br>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Enquiry Details</legend>
+                        <label for="enquiryType">
+                            Type of Enquiry:
+                        </label>
+                        <br>
+                        <select id="enquiryType" name="enquiryType">
+                            <option value="visit">
+                                Visit information
+                            </option>
+                            <option value="tickets">
+                                Tickets
+                            </option>
+                            <option value="education">
+                                Education Programme
+                            </option>
+                            <option value="events">
+                                Events
+                            </option>
+                            <option value="conservation">
+                                Conservation
+                            </option>
+                            <option value="other">
+                                Other
+                            </option>
+                        </select>
+                        <br><br>
+                        <label for="date">
+                            Preferred Visit Date:
+                        </label>
+                        <br>
+                        <input
+                            type="date"
+                            id="date"
+                            name="date">
+                        <br><br>
+                        <label for="number">
+                            Number of Visitors:
+                        </label>
+                        <br>
+                        <input
+                            type="number"
+                            id="number"
+                            name="number"
+                            min="1">
+                        <br><br>
+                        <label for="message">
+                            Your Enquiry:
+                        </label>
+                        <br>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="8"
+                            cols="50"
+                            placeholder="Enter your enquiry here..."
+                            required>
+                        </textarea>
+                    </fieldset>
+                    <br>
+                    <input type="submit" value="Submit Enquiry">
+                    <input type="reset" value="Clear Form">
+                </form>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <p>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="enquiry.html">Enquiry</a>
+                <a href="contact.html">Contact</a>
+            </p>
+            <p>
+                &copy;2026 National Zoological Garden.
+            </p>
+        </footer>
+    </body>
+</html>
