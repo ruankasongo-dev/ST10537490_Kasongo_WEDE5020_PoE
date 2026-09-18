@@ -1,0 +1,155 @@
+body {margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: movingBackground 10s infinite;}
+@keyframes movingBackground {
+    0% {background-image: url("../images/zoo.jpg");
+        background-position: center;}
+    14% {background-image: url("../images/zoo.jpg");
+        background-position: left center;}
+    15% {background-image: url("../images/lion.jpg");
+        background-position: center;}
+    29% {background-image: url("../images/lion.jpg");
+        background-position: right center;}
+    30% {background-image: url("../images/elephant.jpg");
+        background-position: center;}
+    44% {background-image: url("../images/elephant.jpg");
+        background-position: left center;}
+    45% {background-image: url("../images/giraffe.jpg");
+        background-position: center;}
+    59% {background-image: url("../images/giraffe.jpg");
+        background-position: right center;}
+    60% {background-image: url("../images/rhino.jpg");
+        background-position: center;}
+    74% {background-image: url("../images/rhino.jpg");
+        background-position: left center;}
+    75% {background-image: url("../images/zebra.jpg");
+        background-position: center;}
+    89% {background-image: url("../images/zebra.jpg");
+        background-position: right center;}
+    90% {background-image: url("../images/education.jpg");
+        background-position: center;}
+    100% {background-image: url("../images/education.jpg");
+        background-position: left center;}}
+/* ---------- TAG SELECTORS ---------- */
+* {box-sizing: border-box;}
+html {scroll-behavior: smooth;}
+body {margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: white;
+    color: gray;}
+h1,h2,h3 {margin-top: 0;}
+p {max-width: 900px;}
+a {color: darkgreen;
+    text-decoration: none;}
+a:hover {text-decoration: underline;}
+img {max-width: 100%;
+    height: auto;}
+hr {border: 0;
+    border-top: 2px solid whitesmoke;
+    margin: 25px 0;}
+table {width: 100;
+        border-collapse: collapse;}
+th,td {padding: 12px;
+        border: 1px solid #b9c8b3;
+        text-align: left;}
+th {background: #dcebd7;}
+input,select,textarea,button {font: inherit;}
+
+/* ---------- ID SELECTORS ---------- */
+#index-page {background: #f4f7f1;}
+#about-page {background: #f2f7f0;}
+#services-page {background: #f5f8f3;}
+#enquiry-page {background: #f3f7f1;}
+#contact-page {background: #f4f7f2;}
+
+/* ---------- CLASS SELECTORS ---------- */
+.site-header {background: #285c2d;
+            color: white;
+            padding: 20px 5%;
+            text-align: center;}
+.main-nav {display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;}
+.main-nav a {display: inline-block;
+        padding: 10px 18px;
+        background: #ffff;
+        color: #285c2d;
+        border-radius: 6px;
+        font-weight: bold;}
+.main-nav a:hover {background: #dcebd7;
+                text-decoration: none;}
+.site-main {width: min(1100px, 92%);
+            margin: 30px auto;}
+.content-section {background: #ffff;
+                padding: 25px;
+                margin-bottom: 25px;
+                border-radius: 10px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);}
+.page-title {margin-bottom: 5px;
+            font-size: 2rem;}
+.section-title {color: #285c2d;}
+.content-image {display: block;
+                width: auto;
+                max-width: 100%;
+                margin: 15px 0;
+                border-radius: 8px;}
+.data-table {margin-top: 15px;
+            overflow: hidden;}
+.enquiry-form {max-width: 800px;}
+.enquiry-form fieldset {margin-bottom: 20px;
+                        padding: 20px;
+                        border: 1px solid #b9c8b3;
+                        border-radius: 8px;}
+.enquiry-form legend {padding: 0 8px;
+                    font-weight: bold;
+                    color: #285c2d;}
+.enquiry-form input,.enquiry-form select,.enquiry-form textarea {width: 100%;
+                                                                padding: 10px;
+                                                                margin: 5px 0 15px;
+                                                                border: 1px solid #9eae98;
+                                                                border-radius: 5px;}
+.enquiry-form textarea {min-height: 120px;
+                        resize: vertical;}
+.enquiry-form button,.enquiry-form input[type="submit"] {width: auto;
+                                                        padding: 10px 20px;
+                                                        border: 0;
+                                                        border-radius: 6px;
+                                                        background: #285c2d;
+                                                        color: white;
+                                                        cursor: pointer;}
+.enquiry-form button:hover,.enquiry-form input[type="submit"]:hover {background: #1d4522;}
+
+/* ---------- COMPOUND SELECTORS ---------- */
+.site-header h1.page-title {color: white;}
+.site-header h2.section-title {color: white;}
+.content-section p {margin-bottom: 15px;}
+.content-section img.content-image {box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);}
+.data-table th,.data-table td {vertical-align: top;}
+.main-nav a[href="index.html"] {font-weight: bold;}
+.enquiry-form input[type="text"]
+.enquiry-form input[type="email"] {background: white;}
+
+/* ---------- GROUPING SELECTORS ---------- */
+.page-title,.section-title {letter-spacing: 0.3px;}
+.main-nav a,.enquiry-form button,.enquiry-form input[type="submit"] {transition: background 0.2s ease, transform 0.2s ease;}
+.main-nav a:hover,.enquiry-form button:hover,.enquiry-form input[type="submit"]:hover {transform: translate(-1px);}
+@media (max-width: 700px) {.site-header {padding: 15px 4%;}
+.main-nav {flex-direction: column;
+        align-items: stretch;}
+.main-nav a {text-align: center;}
+.site-main {width: 94%;
+        margin: 20px auto;}
+.content-section {padding: 18px;}
+.page-title {font-size: 1.6rem;}
+.data-table {display: block;
+        overflow-x: auto;}}
