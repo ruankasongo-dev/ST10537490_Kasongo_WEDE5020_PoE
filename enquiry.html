@@ -1,0 +1,108 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visitor Enquiry Form | National Zoological Garden</title>
+        <meta name="description" content="Send an enquiry about visiting the National Zoological Garden, tickets, education, events or conservation.">
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#193a23">
+    <script src="js/site.js" defer></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+        <!-- Enquiry page provides a structured form for visitor questions. -->
+        <header class="site-header">
+            <div class="header-content">
+                <p class="site-label">NATIONAL ZOOLOGICAL GARDEN</p>
+                <h1>Visitor Enquiry</h1>
+                <p class="tagline">Ask about visits, education, events and conservation.</p>
+            </div>
+            
+            <div class="nav-tools">
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="main-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+            <form class="site-search" role="search" aria-label="Search this website"><label class="visually-hidden" for="site-search-input">Search this website</label><input id="site-search-input" type="search" placeholder="Search wildlife, education..." autocomplete="off"><button type="submit">Search</button><p class="form-note">Demonstration form: information is validated in your browser but is not sent. A live website requires a secure server-side endpoint.</p></form>
+            </div>
+            <nav class="navigation" id="main-navigation" aria-label="Main navigation">
+            <a href="Index.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="Services.html">Services</a>
+            <a href="Enquiry.html">Enquiry</a>
+            <a href="Contact.html">Contact</a>
+            </nav>
+            <p id="search-status" class="search-status" role="status" aria-live="polite"></p>
+
+        </header>
+
+    <main id="main-content">
+        <section data-searchable class="page-banner">
+            <h2>Make an Enquiry</h2>
+            <p>Complete the form below with the information needed to respond to your enquiry.</p>
+        </section>
+
+        <section data-searchable class="content-section form-section">
+            <form class="contact-form ajax-form" id="enquiry-form" action="#" method="post" novalidate>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Enquiry Details</legend>
+                    <label for="enquiryType">Type of Enquiry</label>
+                    <select id="enquiryType" name="enquiryType">
+                        <option value="visit">Visit Information</option>
+                        <option value="tickets">Tickets</option>
+                        <option value="education">Education</option>
+                        <option value="events">Events / Functions</option>
+                        <option value="conservation">Conservation</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="visitdate">Preferred Visit Date</label>
+                    <input type="date" id="visitdate" name="visitdate">
+
+                    <label for="visitors">Number of Visitors</label>
+                    <input type="number" id="visitors" name="visitors" min="1">
+
+                    <label for="message">Your Enquiry</label>
+                    <textarea id="message" name="message" rows="8" required></textarea>
+                </fieldset>
+
+                <p class="form-feedback" id="enquiry-feedback" role="status" aria-live="polite"></p>
+                <div class="form-actions">
+                    <input class="button" type="submit" value="Submit Enquiry">
+                    <input class="button secondary" type="reset" value="Clear Form">
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="site-footer">
+        <p><strong>National Zoological Garden of South Africa</strong></p>
+        <p>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </p>
+        <p>Wildlife • Conservation • Education • Public Engagement</p>
+        <p>&copy; 2026 Academic Website Project</p>
+    </footer>
+
+    <dialog class="lightbox" id="image-lightbox" aria-label="Enlarged image">
+        <button type="button" class="lightbox-close" aria-label="Close enlarged image">×</button>
+        <img src="" alt="">
+        <p class="lightbox-caption"></p>
+    </dialog>
+    </body>
+    </html>
